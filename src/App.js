@@ -19,7 +19,7 @@ function App() {
         <Projects/>
         <Slogan/>
         <Contacts/>
-        <Footer/>
+
       </div>
     </div>
   );
