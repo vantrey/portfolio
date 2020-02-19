@@ -10,10 +10,12 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+
 }
 .greetings{
   display: flex;
   flex-direction: column;
+
 }
 .photo{
   width: 300px;

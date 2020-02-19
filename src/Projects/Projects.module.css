@@ -1,4 +1,29 @@
-.projects {
+.projectsWrapper {
   height: 100vh;
-  background-color: #ffd4bd;
+  background-color: #b49fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 80%;
+  height: 80%;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects {
+  border: 1px solid;
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.title{
+  margin-top: 0;
 }

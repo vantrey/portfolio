@@ -1,4 +1,42 @@
-.contacts {
+.contactsWrapper {
   height: 100vh;
   background-color: #d1ff95;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.container{
+  width: 80%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.contactsForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  height: 60%;
+}
+.contactsInput {
+  width: 100%;
+  height: 12%;
+}
+.contactsTextArea{
+  width: 100%;
+  height: 45%;
+}
+.contactsButton{
+  width: 100px;
+  height: 30px;
+}
+
+
+
+
+
+
+

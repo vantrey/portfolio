@@ -1,4 +1,21 @@
 .slogan {
   height: 250px;
   background-color: #e1fffd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.container{
+  width: 80%;
+  border: 1px solid;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.sloganButton{
+  width: 100px;
+  height: 30px;;
+}
+

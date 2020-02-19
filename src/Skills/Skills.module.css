@@ -1,4 +1,50 @@
-.skills {
+.skillsWrapper {
   height: 100vh;
   background-color: #ff5edd;
+  display: flex;
+  justify-content: center;
 }
+
+.container {
+  width: 80%;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+
+.titleWrapper {
+  border: 1px solid;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.skills {
+  border: 1px solid;
+  height: 320px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.title{
+  margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
