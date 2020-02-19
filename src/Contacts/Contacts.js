@@ -3,7 +3,7 @@ import styles from './Contacts.module.css'
 
 const Contacts = () => {
   return (
-    <div className={styles.contactsWrapper}>
+    <div className={styles.contacts}>
       <div className={styles.container}>
 
         <span>Контакты</span>

@@ -5,12 +5,12 @@ import Project from "./Project/Project";
 
 const Projects = () => {
   return (
-    <div className={styles.projectsWrapper}>
+    <div className={styles.projects}>
       <div className={styles.container}>
-
+        <div className={styles.titleWrapper}>
           <h3 className={styles.title}>Мои проекты</h3>
-
-        <div className={styles.projects}>
+        </div>
+        <div className={styles.projectItems}>
           <Project descriptionText='Краткое описание проекта'
                  PictureRef='' titleOfProject='Social Network'/>
           <Project descriptionText='Краткое описание проекта'

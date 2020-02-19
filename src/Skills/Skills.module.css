@@ -1,4 +1,4 @@
-.skillsWrapper {
+.skills {
   height: 100vh;
   background-color: #ff5edd;
   display: flex;
@@ -22,7 +22,7 @@
   justify-content: center;
 }
 
-.skills {
+.skillItems {
   border: 1px solid;
   height: 320px;
   display: flex;
