@@ -7,7 +7,7 @@
 
 .container {
   width: 80%;
-  padding: 100px 0px;
+  padding: 100px 0;
   border: 1px solid;
   display: flex;
   flex-direction: column;
@@ -28,6 +28,13 @@
  
 }
 .title{
-  margin: 0px;
+  margin: 0;
   margin-bottom: 100px;
+}
+
+@media (max-width: 1030px) {
+  .title{
+    margin: 0;
+    margin-bottom: 50px;
+  }
 }
