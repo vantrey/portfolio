@@ -5,7 +5,8 @@
   justify-content: center;
   align-items: center;
 }
-.container{
+
+.container {
   width: 80%;
   border: 1px solid;
   height: 80px;
@@ -15,8 +16,14 @@
   align-items: center;
   text-align: center;
 }
-.sloganButton{
+
+.sloganButton {
   width: 100px;
   height: 30px;;
 }
 
+@media (max-width: 600px) {
+  .slogan {
+    height: 180px;
+  }
+}

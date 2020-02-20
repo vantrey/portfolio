@@ -31,6 +31,12 @@
   border: 1px solid;
 }
 
+@media (max-width: 600px) {
+  .footer {
+    height: 180px;
+
+  }
+}
 @media (max-width: 390px) {
   .footerIcons {
     width: 250px;
