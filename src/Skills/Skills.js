@@ -10,8 +10,8 @@ const Skills = () => {
           <h3 className={styles.title}>Мои скилы</h3>
         </div>
         <div className={styles.skillsItems}>
-          {Array.from({length: 3}).map(el => (
-            <Skill descriptionText='Подробное описание навыка'
+          {Array.from({length: 3}).map((el, i) => (
+            <Skill key={i} descriptionText='Подробное описание навыка'
                    iconRef='' titleOfSkill='React'/>
           ))}
         </div>
