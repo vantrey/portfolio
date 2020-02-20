@@ -1,36 +1,33 @@
 .projects {
-  height: 100vh;
-  background-color: #b49fff;
+  min-height: 100vh;
+  background-color: #ff5edd;
   display: flex;
   justify-content: center;
-
 }
 
 .container {
   width: 80%;
+  padding: 100px 0px;
   border: 1px solid;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-
-
+  justify-content: flex-start;
 }
 
 .titleWrapper {
   border: 1px solid;
-  height: 100px;
   display: flex;
   justify-content: center;
 }
 
 .projectItems {
   border: 1px solid;
-  height: 320px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
  
 }
 .title{
-  margin-top: 0;
+  margin: 0px;
+  margin-bottom: 100px;
 }

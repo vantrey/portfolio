@@ -11,10 +11,12 @@ const Projects = () => {
           <h3 className={styles.title}>Мои проекты</h3>
         </div>
         <div className={styles.projectItems}>
-          <Project descriptionText='Краткое описание проекта'
-                 PictureRef='' titleOfProject='Social Network'/>
-          <Project descriptionText='Краткое описание проекта'
-                   PictureRef='' titleOfProject='Social Network'/>
+
+          {Array.from({length: 2}).map(el => (
+            <Project descriptionText='Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Dicta quidem, veritatis.'
+                     PictureRef='' titleOfProject='Social Network'/>))}
+
         </div>
       </div>
     </div>
