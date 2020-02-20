@@ -7,21 +7,17 @@
 }
 
 .container {
-  border: 1px solid;
   width: 80%;
   height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
-
 }
 
 .footerIcons {
   display: flex;
   justify-content: space-between;
-  border: 1px solid;
   width: 300px;
 }
 
@@ -37,6 +33,7 @@
 
   }
 }
+
 @media (max-width: 390px) {
   .footerIcons {
     width: 250px;

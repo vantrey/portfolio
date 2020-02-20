@@ -8,7 +8,6 @@
 
 .container {
   width: 80%;
-  border: 1px solid;
   height: 80px;
   display: flex;
   flex-direction: column;
