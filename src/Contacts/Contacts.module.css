@@ -39,7 +39,7 @@
   height: 30px;
 }
 
-@media (max-width: 950px) {
+@media screen and (max-width: 950px) {
   .contactsForm {
     width: 90%;
   }
