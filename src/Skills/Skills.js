@@ -7,7 +7,8 @@ const Skills = () => {
     <div className={styles.skills}>
       <div className={styles.container}>
         <div className={styles.titleWrapper}>
-          <h3 className={styles.title}>Мои скилы</h3>
+          <h2 className={styles.title}>Мои скиллы</h2>
+          <div className={styles.line}></div>
         </div>
         <div className={styles.skillsItems}>
           {Array.from({length: 3}).map((el, i) => (

@@ -1,6 +1,6 @@
 .skills {
   min-height: 100vh;
-  background-color: #ffd376;
+  background-color: #252527;
   display: flex;
   justify-content: center;
 }
@@ -15,7 +15,26 @@
 
 .titleWrapper {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 150px;
+}
+
+.line {
+  width: 55px;
+  height: 1px;
+  background-color: #4e93e6;
+}
+
+.title{
+  font-size: 36px;
+  line-height: 1.2;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 5px;
+  margin: 0;
+  margin-bottom: 45px;
+  font-weight: 400;
+  text-transform: capitalize;
 }
 
 .skillsItems {
@@ -23,15 +42,11 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.title{
-  margin: 0;
-  margin-bottom: 100px;
-}
+
 
 @media (max-width: 780px) {
-  .title{
-    margin: 0;
-    margin-bottom: 50px;
+  .titleWrapper{
+    height: 110px;
   }
 }
 
