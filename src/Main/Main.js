@@ -7,9 +7,11 @@ const Main = () => {
       <div className={styles.container}>
         <div className={styles.greetings}>
           <span>Привет!</span>
-          <span>
-            Я <span>Иван Толкачев</span>
-          </span>
+          <div className={styles.greetingsName}>
+            <span>Меня зовут</span>
+            <span>Иван Толкачев</span>
+          </div>
+
           <h1>Я front-end разработчик</h1>
         </div>
         <div className={styles.photo}>
