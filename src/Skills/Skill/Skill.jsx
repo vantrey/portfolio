@@ -3,10 +3,12 @@ import styles from './Skill.module.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 
 const Skill = (props) => {
-  return(
+  return (
     <div className={styles.skillWrapper}>
-      <div className={styles.skillIcon}>
-        <FontAwesomeIcon icon={props.iconRef}/>
+      <div className={styles.skillIconBg}>
+        <div className={styles.skillIcon}>
+          <FontAwesomeIcon icon={props.icon}/>
+        </div>
       </div>
       <h3>{props.titleOfSkill}</h3>
       <div className={styles.skillDescription}>

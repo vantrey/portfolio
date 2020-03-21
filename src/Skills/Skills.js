@@ -1,24 +1,52 @@
 import React from "react";
 import styles from './Skills.module.css'
 import Skill from "./Skill/Skill";
-import {faNodeJs, faReact} from '@fortawesome/free-brands-svg-icons'
-
-
+import {faNodeJs, faReact, faReacteurope} from '@fortawesome/free-brands-svg-icons'
+import Title from "../Tilte/Title"
+import {faCalculator, faCocktail, faCoffee} from "@fortawesome/free-solid-svg-icons"
 
 const Skills = () => {
+  const skills = [
+    {
+      title: 'HTML&CSS',
+      descriptionText: 'Lorem ipsum dolor sit amet, ' +
+        'consectetur adipisicing elit. Dicta quidem, veritatis.' +
+        'consectetur adipisicing elit. ',
+      icon: faReact,
+    },
+    {
+      title: 'Java Script',
+      descriptionText: 'Lorem ipsum dolor sit amet, ' +
+        'consectetur adipisicing elit. Dicta quidem, veritatis.' +
+        'consectetur adipisicing elit. ',
+      icon: faNodeJs
+    },
+    {
+      title: 'React',
+      descriptionText: 'Lorem ipsum dolor sit amet, ' +
+        'consectetur adipisicing elit. Dicta quidem, veritatis.' +
+        'consectetur adipisicing elit.',
+      icon: faReact
+    },
+    {
+      title: 'Redux',
+      descriptionText: 'Lorem ipsum dolor sit amet, ' +
+        'consectetur adipisicing elit. Dicta quidem, veritatis.' +
+        'consectetur adipisicing elit.',
+      icon: faCoffee
+    },
+  ]
+  const skillsEls = skills.map((skill, i) => (
+    <Skill key={i}
+           descriptionText={skill.descriptionText}
+           icon={skill.icon} titleOfSkill={skill.title}/>
+  ))
   return (
     <div className={styles.skills}>
       <div className={styles.container}>
-        <div className={styles.titleWrapper}>
-
-          <h2 className={styles.title}>Мои скиллы</h2>
-          <div className={styles.line}></div>
-        </div>
+        <Title/>
         <div className={styles.skillsItems}>
-          {Array.from({length: 3}).map((el, i) => (
-            <Skill key={i} descriptionText='Подробное описание навыка'
-                   iconRef={faReact} titleOfSkill='React'/>
-          ))}
+          {skillsEls}
         </div>
       </div>
     </div>
