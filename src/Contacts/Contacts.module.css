@@ -1,6 +1,6 @@
 .contacts {
   height: 100vh;
-  background-color: #d1ff95;
+  background-color: #1f1f20;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,22 +16,26 @@
 }
 
 .contactsForm {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  composes: container;
   width: 60%;
-  height: 60%;
+  height: auto;
+  margin-top: 20px;
 }
 
 .contactsInput {
+  font-family: 'Noto Sans', sans-serif;
   width: 100%;
-  height: 12%;
+  height: 35px;
+  color: #a3a3a3;
+  background-color: #252527;
+  border: 1px solid #4a4a4a;
+  outline: none;
+  margin-bottom: 20px;
 }
 
 .contactsTextArea {
-  width: 100%;
-  height: 45%;
+  height: 120px;
+  composes: contactsInput;
 }
 
 .contactsButton {

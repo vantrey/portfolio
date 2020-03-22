@@ -39,12 +39,12 @@ const Skills = () => {
   const skillsEls = skills.map((skill, i) => (
     <Skill key={i}
            descriptionText={skill.descriptionText}
-           icon={skill.icon} titleOfSkill={skill.title}/>
+           icon={skill.icon} skillTitle={skill.title}/>
   ))
   return (
     <div className={styles.skills}>
       <div className={styles.container}>
-        <Title/>
+        <Title titleText={'мои навыки'}/>
         <div className={styles.skillsItems}>
           {skillsEls}
         </div>

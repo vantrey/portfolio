@@ -10,7 +10,7 @@ const Skill = (props) => {
           <FontAwesomeIcon icon={props.icon}/>
         </div>
       </div>
-      <h3>{props.titleOfSkill}</h3>
+      <h3>{props.skillTitle}</h3>
       <div className={styles.skillDescription}>
         <span>{props.descriptionText}</span>
       </div>

@@ -1,6 +1,6 @@
 .slogan {
-  height: 250px;
-  background-color: #e1fffd;
+  height: 270px;
+  background-color: #252527;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,7 +8,7 @@
 
 .container {
   width: 80%;
-  height: 40%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

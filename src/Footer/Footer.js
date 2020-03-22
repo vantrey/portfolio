@@ -1,5 +1,14 @@
 import React from "react";
 import styles from './Footer.module.css'
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {
+  faFacebook,
+  faFacebookF,
+  faLinkedin, faLinkedinIn,
+  faTelegram,
+  faTelegramPlane,
+  faVk
+} from "@fortawesome/free-brands-svg-icons"
 
 const Footer = () => {
   return (
@@ -9,15 +18,21 @@ const Footer = () => {
 
         <span>Иван Толкачев</span>
 
-        <div className={styles.footerIcons}>
-          <img className={styles.footerIcon}/>
-          <img className={styles.footerIcon}/>
-          <img className={styles.footerIcon}/>
-          <img className={styles.footerIcon}/>
-        </div>
-
+        <nav className={styles.footerIcons}>
+          <a href={``}>
+            <FontAwesomeIcon className={styles.footerIcon} icon={faFacebookF}/>
+          </a>
+          <a href={``}>
+            <FontAwesomeIcon className={styles.footerIcon} icon={faVk}/>
+          </a>
+          <a href={``}>
+            <FontAwesomeIcon className={styles.footerIcon} icon={faTelegramPlane}/>
+          </a>
+          <a href={``}>
+            <FontAwesomeIcon className={styles.footerIcon} icon={faLinkedinIn}/>
+          </a>
+        </nav>
         <span>Все права защищены</span>
-
       </div>
     </footer>
 

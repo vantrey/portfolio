@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   height: 150px;
+  margin: 10px 0;
 }
 
 .line {
@@ -27,11 +28,23 @@
     height: 110px;
   }
 }
-@media screen and (max-width: 343px) {
+@media screen and (max-width: 450px) {
+  .title {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .title {
+    letter-spacing: 2px;
+  }
+}
+
+/*@media screen and (max-width: 343px) {
   .title {
     font-size: 30px;
   }
-}
+}*/
 
 
 

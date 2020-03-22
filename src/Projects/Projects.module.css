@@ -13,21 +13,12 @@
   justify-content: flex-start;
 }
 
-.titleWrapper {
-  display: flex;
-  justify-content: center;
-}
-
 .projectsItems {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
- 
 }
-.title{
-  margin: 0;
-  margin-bottom: 100px;
-}
+
 
 @media (max-width: 1030px) {
   .title{
