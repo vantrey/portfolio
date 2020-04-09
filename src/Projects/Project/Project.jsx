@@ -3,17 +3,21 @@ import styles from './Project.module.css'
 import Button from "../../Button/Button"
 
 const Project = (props) => {
-  return(
+  return (
     <div className={styles.projectWrapper}>
-      <div className={styles.projectPicture}>
-          <img src={props.projectPicture}/>
+      <div className={styles.projectPicture}
+           style={{backgroundImage: `url(${props.projectPicture})`}}
+      >
+        <div className={styles.button}>
+          <Button
+            buttonName={`смотреть`}
+            buttonLink={props.projectUrl}
+          />
+        </div>
       </div>
       <div className={styles.projectDescriptionWrapper}>
         <h3 className={styles.projectTitle}>
-          <Button
-            buttonName={props.projectTitle}
-            buttonLink={props.projectUrl}
-          />
+          {props.projectTitle}
         </h3>
         <span className={styles.projectDescription}>
           {props.descriptionText}</span>

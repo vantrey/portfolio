@@ -1,9 +1,9 @@
 import React from "react";
 import styles from './Skills.module.css'
 import Skill from "./Skill/Skill";
-import {faNodeJs, faReact, faReacteurope} from '@fortawesome/free-brands-svg-icons'
+import {faHtml5, faJs, faNodeJs, faReact} from '@fortawesome/free-brands-svg-icons'
 import Title from "../Tilte/Title"
-import {faCalculator, faCocktail, faCoffee} from "@fortawesome/free-solid-svg-icons"
+import reduxIcon from '@iconify/icons-simple-icons/redux';
 
 const Skills = () => {
   const skills = [
@@ -12,34 +12,43 @@ const Skills = () => {
       descriptionText: 'Lorem ipsum dolor sit amet, ' +
         'consectetur adipisicing elit. Dicta quidem, veritatis.' +
         'consectetur adipisicing elit. ',
-      icon: faReact,
+      icon: faHtml5,
+      isReduxIcon: false
     },
     {
       title: 'Java Script',
       descriptionText: 'Lorem ipsum dolor sit amet, ' +
         'consectetur adipisicing elit. Dicta quidem, veritatis.' +
         'consectetur adipisicing elit. ',
-      icon: faNodeJs
+      icon: faJs,
+      isReduxIcon: false
     },
     {
       title: 'React',
       descriptionText: 'Lorem ipsum dolor sit amet, ' +
         'consectetur adipisicing elit. Dicta quidem, veritatis.' +
         'consectetur adipisicing elit.',
-      icon: faReact
+      icon: faReact,
+      isReduxIcon: false
     },
     {
       title: 'Redux',
       descriptionText: 'Lorem ipsum dolor sit amet, ' +
         'consectetur adipisicing elit. Dicta quidem, veritatis.' +
         'consectetur adipisicing elit.',
-      icon: faCoffee
-    },
+      icon: reduxIcon,
+      isReduxIcon: true
+
+
+},
   ]
   const skillsEls = skills.map((skill, i) => (
     <Skill key={i}
            descriptionText={skill.descriptionText}
-           icon={skill.icon} skillTitle={skill.title}/>
+           isReduxIcon={skill.isReduxIcon}
+           icon={skill.icon}
+           skillTitle={skill.title}
+    />
   ))
   return (
     <div className={styles.skills}>
