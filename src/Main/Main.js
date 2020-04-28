@@ -6,13 +6,13 @@ const Main = () => {
     <div className={styles.main}>
       <div className={styles.container}>
         <div className={styles.greetings}>
-          <span>Привет!</span>
+          <span>Hi There</span>
           <div className={styles.greetingsName}>
-            <span>Меня зовут</span>
-            <span>Иван Толкачев</span>
+            <span>I am</span>
+            <span>Ivan Tolkachev</span>
           </div>
 
-          <h1>Я front-end разработчик</h1>
+          <h1>A front-end developer</h1>
         </div>
         <div className={styles.photo}>
           <div className={styles.image}/>

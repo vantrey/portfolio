@@ -8,14 +8,14 @@ const Contacts = () => {
     <div className={styles.contacts}>
       <div className={styles.container}>
         <div>
-          <Title titleText={`контакты`}/>
+          <Title titleText={`contacts`}/>
         </div>
 
         <form className={styles.contactsForm}>
-          <input className={styles.contactsInput} placeholder={`Ваше имя`}/>
+          <input className={styles.contactsInput} placeholder={`Your name`}/>
           <input className={styles.contactsInput} placeholder={`e-mail`}/>
-          <textarea className={styles.contactsTextArea} placeholder={`сообщение`}/>
-          <Button buttonName={`отправить`} buttonLink={``}/>
+          <textarea className={styles.contactsTextArea} placeholder={`message`}/>
+          <Button buttonName={`send message`} buttonLink={``}/>
         </form>
       </div>
     </div>

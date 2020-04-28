@@ -13,7 +13,6 @@
 }
 
 .buttonName {
-  font-family: M PLUS Rounded\ 1c, sans-serif;
   font-weight: 400;
   font-stretch: normal;
   font-size: 14px;
@@ -35,7 +34,7 @@
   z-index: -1;
 }
 
-@media handheld {
+@media screen and (max-width: 500px){
   .button {
     padding: 0 10px;
     background-color: #4e93e6;

@@ -23,12 +23,13 @@
 .greetingsName {
   display: flex;
   flex-direction: row;
-  font-weight: 650;
+  font-weight: 700;
   font-stretch: normal;
-  font-size: 35px;
+  font-size: 45px;
   line-height: 1.2;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   letter-spacing: 5px;
+  margin: 10px 0;
 }
 
 .greetingsName span:nth-child(2) {
@@ -43,7 +44,7 @@
   height: 18px;
   background-color: #4e93e6;
   left: 18px;
-  bottom: 0;
+  bottom: 2px;
   right: 0;
   z-index: -1;
 }
@@ -107,7 +108,7 @@ h1 {
   }
 
   h1 {
-    font-size: 25px;
+    font-size: 22px;
   }
 
   .image {
@@ -135,7 +136,7 @@ h1 {
   }
 
   h1 {
-    font-size: 22px;
+    font-size: 19px;
   }
 
   .image {
@@ -153,7 +154,7 @@ h1 {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 382px) {
   .greetings span:nth-child(2):after {
     width: 178px;
   }

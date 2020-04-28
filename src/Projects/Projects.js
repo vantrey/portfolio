@@ -9,7 +9,7 @@ import counterImg from "../assets/images/counter-img.png"
 const Projects = () => {
   const projects = [
     {
-      projectTitle: 'Социальноя сеть',
+      projectTitle: 'Social network',
       descriptionText: 'Lorem ipsum dolor sit amet, ' +
         'consectetur adipisicing elit. Dicta quidem, veritatis.' +
         'consectetur adipisicing elit. ',
@@ -26,7 +26,7 @@ const Projects = () => {
 
     },
     {
-      projectTitle: 'Счетчик',
+      projectTitle: 'Counter',
       descriptionText: 'Lorem ipsum dolor sit amet, ' +
         'consectetur adipisicing elit. Dicta quidem, veritatis.' +
         'consectetur adipisicing elit.',
@@ -55,7 +55,7 @@ const Projects = () => {
   return (
     <div className={styles.projects}>
       <div className={styles.container}>
-        <Title titleText={'проекты'}/>
+        <Title titleText={'my projects'}/>
         <div className={styles.projectsItems}>
           {projectsEls}
         </div>

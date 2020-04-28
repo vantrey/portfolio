@@ -1,6 +1,6 @@
 .skillWrapper {
   width: 300px;
-  margin: 30px 5px;
+  margin: 30px 5px 40px;
   /*border: 1px solid;*/
   display: flex;
   flex-direction: column;
@@ -12,7 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px 0;
+  margin: 30px 0;
   width: 80px;
   height: 80px;
   transform: rotate(45deg);
@@ -28,6 +28,12 @@
 .skillDescription {
   width: 100%;
   text-align: center;
+}
+
+@media (max-width: 780px) {
+  .skillIconBg {
+    margin: 25px 0;
+  }
 }
 
 @media (max-width: 524px) {

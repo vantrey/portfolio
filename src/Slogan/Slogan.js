@@ -8,9 +8,9 @@ const Slogan = () => {
 
     <div className={styles.slogan}>
       <div className={styles.container}>
-        <Title titleText={`я на фрилансе`}/>
+        <Title titleText={`I Am Available For Freelancer`}/>
           <Button
-            buttonName={`нанять меня`}
+            buttonName={`here me`}
             buttonLink={''}
           />
       </div>

@@ -53,7 +53,7 @@ const Skills = () => {
   return (
     <div className={styles.skills}>
       <div className={styles.container}>
-        <Title titleText={'мои навыки'}/>
+        <Title titleText={'my skills'}/>
         <div className={styles.skillsItems}>
           {skillsEls}
         </div>
