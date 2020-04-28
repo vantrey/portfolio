@@ -3,16 +3,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 300px;
+  width: 450px;
 }
 
 .projectPicture {
-  width: 300px;
+  width: 450px;
   height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-size: cover;
+  background-position: center;
   position: relative;
   z-index: 0;
 }
@@ -33,18 +34,14 @@
 }
 
 .projectDescriptionWrapper {
-  padding-top: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
-  text-align: center;
+  padding: 25px 20px;
+  background-color: #242426;
 }
 
 .projectTitle {
-  font-size: 20px;
+  font-size: 18px;
   text-transform: capitalize;
-  margin: 20px 0;
+  margin: 0 0 15px 0;
 }
 
 .projectDescription {
@@ -54,12 +51,12 @@
 
 @media (max-width: 540px) {
   .projectWrapper {
-    width: 250px;
+    width: 300px;
   }
 
   .projectPicture {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
   }
 }
 
