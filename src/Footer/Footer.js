@@ -7,6 +7,7 @@ import {
   faTelegramPlane,
   faVk
 } from "@fortawesome/free-brands-svg-icons"
+import Title from "../Tilte/Title"
 
 const Footer = () => {
   return (
@@ -14,7 +15,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.container}>
 
-        <span>Иван Толкачев</span>
+        <Title>Ivan Tolkachev</Title>
 
         <nav className={styles.footerIcons}>
           <a href={``}>
@@ -30,7 +31,7 @@ const Footer = () => {
             <FontAwesomeIcon className={styles.footerIcon} icon={faLinkedinIn}/>
           </a>
         </nav>
-        <span>Все права защищены</span>
+        <span className={styles.copyRight}>© 2020 All Rights Reserved.</span>
       </div>
     </footer>
 
