@@ -22,11 +22,11 @@
   text-transform: capitalize;
 }
 
-@media screen and (max-width: 780px) {
+/*@media screen and (max-width: 780px) {
   .titleWrapper {
     height: 110px;
   }
-}
+}*/
 
 @media screen and (max-width: 450px) {
   .title {

@@ -21,8 +21,8 @@
   height: 30px;;
 }
 
-@media (max-width: 600px) {
+/*@media (max-width: 600px) {
   .slogan {
-    height: 180px;
+    height: 230px;
   }
-}
+}*/
