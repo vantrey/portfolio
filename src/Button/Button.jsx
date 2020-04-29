@@ -6,16 +6,13 @@ const Button = (props) => {
     document.location.href = props.buttonLink
   }
   return (
-    <div>
+    <>
       <div className={styles.button}>
-      <span
-        className={styles.buttonName}
-        onClick={onButtonClick}
-      >
-        {props.buttonName}
-      </span>
+        <span className={styles.buttonName} onClick={onButtonClick}>
+          {props.buttonName}
+        </span>
       </div>
-    </div>
+    </>
 
   )
 }

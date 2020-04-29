@@ -17,12 +17,12 @@
 
 .contactsForm {
   composes: container;
-  width: 550px;
+  width: 500px;
   height: auto;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
-.contactsInput {
+.formArea {
   padding: 0 10px;
   font-family: 'Noto Sans', sans-serif;
   width: 100%;
@@ -34,9 +34,10 @@
   margin-bottom: 20px;
 }
 
-.contactsTextArea {
+.messageArea {
+  composes: formArea;
   height: 120px;
-  composes: contactsInput;
+  padding: 10px;
 }
 
 .contactsButton {
@@ -44,7 +45,7 @@
   height: 30px;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 630px) {
   .contactsForm {
     width: 100%;
   }

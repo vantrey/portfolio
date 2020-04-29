@@ -17,18 +17,18 @@ const Footer = () => {
 
         <Title>Ivan Tolkachev</Title>
 
-        <nav className={styles.footerIcons}>
+        <nav className={styles.socialBlock}>
           <a href={``}>
-            <FontAwesomeIcon className={styles.footerIcon} icon={faFacebookF}/>
+            <FontAwesomeIcon className={styles.socialIcon} icon={faFacebookF}/>
           </a>
           <a href={``}>
-            <FontAwesomeIcon className={styles.footerIcon} icon={faVk}/>
+            <FontAwesomeIcon className={styles.socialIcon} icon={faVk}/>
           </a>
           <a href={``}>
-            <FontAwesomeIcon className={styles.footerIcon} icon={faTelegramPlane}/>
+            <FontAwesomeIcon className={styles.socialIcon} icon={faTelegramPlane}/>
           </a>
           <a href={``}>
-            <FontAwesomeIcon className={styles.footerIcon} icon={faLinkedinIn}/>
+            <FontAwesomeIcon className={styles.socialIcon} icon={faLinkedinIn}/>
           </a>
         </nav>
         <span className={styles.copyRight}>© 2020 All Rights Reserved.</span>

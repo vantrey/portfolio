@@ -15,23 +15,23 @@
   height: 80%;
 }
 
-.footerIcons {
+.socialBlock {
   display: flex;
   justify-content: space-between;
   width: 300px;
   height: 50px;
 }
 
-.footerIcons a {
+.socialBlock a {
   color: white;
   width: 40px;
 }
 
-.footerIcon {
+.socialIcon {
   font-size: 35px;
 }
 
-.footerIcon:hover {
+.socialIcon:hover {
   font-size: 45px;
   transition: 0.2s;
 }
@@ -40,14 +40,27 @@
   opacity: 0.6;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .footer {
     height: 180px;
   }
+
+  .socialIcon {
+    font-size: 25px;
+  }
+
+  .socialIcon:hover {
+    font-size: 35px;
+  }
+
+  .socialBlock {
+    width: 250px;
+  }
 }
 
-@media (max-width: 390px) {
-  .footerIcons {
+
+@media screen and (max-width: 390px) {
+  .socialBlock {
     width: 250px;
   }
 }
