@@ -7,8 +7,8 @@ const Button = (props) => {
   }
   return (
     <>
-      <div className={styles.button}>
-        <span className={styles.buttonName} onClick={onButtonClick}>
+      <div className={styles.button} onClick={onButtonClick}>
+        <span className={styles.buttonName}>
           {props.buttonName}
         </span>
       </div>
