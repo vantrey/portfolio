@@ -38,6 +38,7 @@
   composes: formArea;
   height: 120px;
   padding: 10px;
+  resize: none;
 }
 
 .contactsButton {
