@@ -45,6 +45,10 @@
     height: 180px;
   }
 
+  .socialBlock {
+    margin-top: 10px;
+  }
+
   .socialIcon {
     font-size: 25px;
   }
@@ -54,13 +58,6 @@
   }
 
   .socialBlock {
-    width: 250px;
-  }
-}
-
-
-@media screen and (max-width: 390px) {
-  .socialBlock {
-    width: 250px;
+    width: 260px;
   }
 }
