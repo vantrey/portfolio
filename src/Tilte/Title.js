@@ -4,13 +4,12 @@ import styles from './Title.module.css'
 const Title = (props) => {
   return (
     <div className={styles.titleWrapper}>
-      {props.titleText ?
+      {!props.children ?
         <>
           <h2 className={styles.title}>{props.titleText}</h2>
           <div className={styles.line}></div>
         </>
-        : <h2 className={styles.compactSize}>{props.children}</h2>
-      }
+        : <h2 className={styles.smallSize}>{props.children}</h2>}
     </div>
   )
 }

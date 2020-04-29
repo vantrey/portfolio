@@ -22,7 +22,7 @@
   text-transform: capitalize;
 }
 
-.compactSize {
+.smallSize {
   composes: title;
   margin: 0;
   font-size: 24px;
@@ -39,7 +39,7 @@
     font-size: 30px;
   }
 
-  .compactSize {
+  .smallSize {
     font-size: 24px;
   }
 }
