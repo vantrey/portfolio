@@ -1,9 +1,10 @@
 import React from "react";
 import styles from './Skills.module.css'
 import Skill from "./Skill/Skill";
-import {faHtml5, faJs, faNodeJs, faReact} from '@fortawesome/free-brands-svg-icons'
+import {faHtml5, faJs, faReact} from '@fortawesome/free-brands-svg-icons'
 import Title from "../Tilte/Title"
 import reduxIcon from '@iconify/icons-simple-icons/redux';
+import Fade from 'react-reveal/Fade';
 
 const Skills = () => {
   const skills = [
@@ -38,9 +39,7 @@ const Skills = () => {
         'consectetur adipisicing elit.',
       icon: reduxIcon,
       isReduxIcon: true
-
-
-},
+    },
   ]
   const skillsEls = skills.map((skill, i) => (
     <Skill key={i}
@@ -53,10 +52,12 @@ const Skills = () => {
   return (
     <div className={styles.skills}>
       <div className={styles.container}>
-        <Title titleText={'my skills'}/>
-        <div className={styles.skillsItems}>
-          {skillsEls}
-        </div>
+        <Title isSmall={false}>my skills</Title>
+        <Fade bottom>
+          <div className={styles.skillsItems}>
+            {skillsEls}
+          </div>
+        </Fade>
       </div>
     </div>
   )

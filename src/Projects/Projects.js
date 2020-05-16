@@ -4,7 +4,7 @@ import Project from "./Project/Project";
 import Title from "../Tilte/Title"
 import incubatorImg from "../assets/images/it-incubator-img.jpg"
 import counterImg from "../assets/images/counter-img.png"
-
+import Fade from 'react-reveal/Fade';
 
 const Projects = () => {
   const projects = [
@@ -55,10 +55,12 @@ const Projects = () => {
   return (
     <div className={styles.projects}>
       <div className={styles.container}>
-        <Title titleText={'my projects'}/>
-        <div className={styles.projectsItems}>
-          {projectsEls}
-        </div>
+        <Title isSmall={false}>my projects</Title>
+        <Fade bottom>
+          <div className={styles.projectsItems}>
+            {projectsEls}
+          </div>
+        </Fade>
       </div>
     </div>
   )
