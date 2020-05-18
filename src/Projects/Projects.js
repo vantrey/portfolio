@@ -53,10 +53,10 @@ const Projects = () => {
     />
   ))
   return (
-    <div className={styles.projects}>
+    <div id="projects" className={styles.projects}>
       <div className={styles.container}>
         <Title isSmall={false}>my projects</Title>
-        <Fade bottom>
+        <Fade top>
           <div className={styles.projectsItems}>
             {projectsEls}
           </div>

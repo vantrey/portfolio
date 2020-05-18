@@ -33,8 +33,8 @@
 }
 
 .socialIcon:hover {
-  font-size: 45px;
-  transition: 0.2s;
+  transform: scale(1.5);
+  transition: all 0.4s;
 }
 
 .copyRight {
@@ -55,7 +55,8 @@
   }
 
   .socialIcon:hover {
-    font-size: 35px;
+    transform: scale(1.5);
+    transition: all 0.4s;
   }
 
   .socialBlock {

@@ -6,12 +6,12 @@ import Fade from 'react-reveal/Fade';
 
 const Contacts = () => {
   return (
-    <div className={styles.contacts}>
+    <div id={'contacts'} className={styles.contacts}>
       <div className={styles.container}>
         <div>
           <Title isSmall={false}>contact</Title>
         </div>
-        <Fade bottom>
+        <Fade top>
           <form className={styles.contactsForm}>
             <input className={styles.formArea} placeholder={`name`}/>
             <input className={styles.formArea} placeholder={`e-mail`}/>

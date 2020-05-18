@@ -6,11 +6,10 @@ import Fade from 'react-reveal/Fade';
 
 const Slogan = () => {
   return (
-
     <div className={styles.slogan}>
       <div className={styles.container}>
         <Title isSmall={false}>I Am Available For Freelancer</Title>
-        <Fade bottom>
+        <Fade top>
           <Button
             buttonName={`here me`}
             buttonLink={''}

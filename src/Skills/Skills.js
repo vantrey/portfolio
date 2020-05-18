@@ -50,10 +50,10 @@ const Skills = () => {
     />
   ))
   return (
-    <div className={styles.skills}>
+    <div id="skills" className={styles.skills}>
       <div className={styles.container}>
         <Title isSmall={false}>my skills</Title>
-        <Fade bottom>
+        <Fade top>
           <div className={styles.skillsItems}>
             {skillsEls}
           </div>

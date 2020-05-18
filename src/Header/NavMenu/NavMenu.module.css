@@ -1,10 +1,18 @@
 
-.navMenu{
+.navMenu {
   display: flex;
   width: 360px;
   justify-content: space-between;
 }
-.link{
+
+.link {
   text-decoration: none;
   color: #4e93e6;
- }
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  line-height: 1.4;
+}
+
+.active {
+  border-bottom: 2px solid #4e93e6;
+}

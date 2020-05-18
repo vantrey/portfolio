@@ -15,7 +15,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <Title isSmall={true}>Ivan Tolkachev</Title>
-        <Fade bottom>
+        <Fade top>
           <nav className={styles.socialBlock}>
             <a href={``}>
               <FontAwesomeIcon className={styles.socialIcon} icon={faFacebookF}/>
