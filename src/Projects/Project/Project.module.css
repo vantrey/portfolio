@@ -7,6 +7,10 @@
   position: relative;
 }
 
+.projectPictureWrapper {
+  position: relative;
+}
+
 .projectPicture {
   width: 450px;
   height: 300px;
@@ -21,7 +25,7 @@
 }
 
 .projectPicture:hover {
-  filter: blur(2px)
+  filter: blur(3px)
 }
 
 .projectPicture:after {
@@ -35,8 +39,10 @@
 }
 
 .button {
-  position: relative;
-  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .projectDescriptionWrapper {

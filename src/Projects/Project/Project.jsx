@@ -5,9 +5,11 @@ import Button from "../../Button/Button"
 const Project = (props) => {
   return (
     <div className={styles.projectWrapper}>
-      <div className={styles.projectPicture}
-           style={{backgroundImage: `url(${props.projectPicture})`}}
-      >
+      <div className={styles.projectPictureWrapper}>
+        <div className={styles.projectPicture}
+             style={{backgroundImage: `url(${props.projectPicture})`}}
+        >
+        </div>
         <div className={styles.button}>
           <Button
             buttonName={`view more`}

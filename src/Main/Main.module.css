@@ -58,9 +58,6 @@ h1 {
   z-index: 0;
   transition: 700ms;
 }
-/*.photo:hover {
-  transform: scale(1.1, 1.1);
-}*/
 
 .image {
   width: 300px;
