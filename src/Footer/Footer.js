@@ -34,7 +34,6 @@ const Footer = () => {
         <span className={styles.copyRight}>© 2020 All Rights Reserved.</span>
       </div>
     </footer>
-
   )
 };
 export default Footer;
