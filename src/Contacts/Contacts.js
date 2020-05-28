@@ -10,8 +10,8 @@ import TextField from "../TextField/TextField"
 const Contacts = () => {
   const sendMessageSchema = yup.object().shape({
     name: yup.string().required('⚠ please, fill up your name'),
-    ['e-mail']: yup.string().required('⚠ please, fill up your e-mail')
-      .email('⚠ please, fill up a valid e-mail address'),
+    email: yup.string().required('⚠ please, fill up your email')
+      .email('⚠ please, fill up a valid email address'),
     message: yup.string().required('⚠ please, enter your message')
   })
 
@@ -28,7 +28,7 @@ const Contacts = () => {
         <Fade top>
           <form onSubmit={handleSubmit(onSubmit)} className={styles.contactsForm}>
             <TextField type={`input`} name={`name`} register={register} errorMessage={errors.name}/>
-            <TextField type={`input`} name={`e-mail`} register={register} errorMessage={errors['e-mail']}/>
+            <TextField type={`input`} name={'email'} register={register} errorMessage={errors.email}/>
             <TextField type={`textarea`} name={`message`} register={register} errorMessage={errors.message}/>
             <div className={styles.contactsButton}><Button buttonName={`send message`} buttonLink={``}/></div>
           </form>
