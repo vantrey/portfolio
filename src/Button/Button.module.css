@@ -3,9 +3,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0;
   height: 40px;
   position: relative;
+}
+
+.button a {
+  text-decoration: none;
+}
+
+.button button {
+  padding: 0;
+  background: none;
+  border: none;
+  color: white;
   cursor: pointer;
 }
 
@@ -36,11 +46,3 @@
   box-shadow: 0 0 20px #4e93e6;
   border-radius: 3px;
 }
-
-/*
-@media screen and (max-width: 500px){
-  .button {
-    padding: 0 10px;
-    background-color: #4e93e6;
-  }
-}*/

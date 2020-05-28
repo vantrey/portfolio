@@ -13,11 +13,13 @@
     "gh-pages": "^2.2.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-hook-form": "^5.7.2",
     "react-particles-js": "^3.2.1",
     "react-reveal": "^1.2.2",
     "react-scripts": "3.4.1",
     "react-scroll": "^1.7.16",
-    "react-tilt": "^0.1.4"
+    "react-tilt": "^0.1.4",
+    "yup": "^0.29.0"
   },
   "scripts": {
     "start": "react-scripts start",
