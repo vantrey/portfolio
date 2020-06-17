@@ -27,7 +27,7 @@ const Main = () => {
             axis: null,   // What axis should be disabled. Can be X or Y.
             reset: true,    // If the tilt effect has to be reset on exit.
             easing: "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
-          }} style={{ height: 400, width: 300 } }>
+          }} style={{height: 400, width: 300}}>
             <div className="Tilt-inner">
               <div className={styles.image} style={{backgroundImage: `url(${photo})`}}/>
             </div>

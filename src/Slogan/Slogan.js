@@ -12,7 +12,7 @@ const Slogan = () => {
         <Fade top>
           <Button
             buttonName={`here me`}
-            buttonLink={''}
+            buttonLink={'https://jobs.tut.by/resume/5bef5e71ff07f75e360039ed1f64314c6d5276'}
           />
         </Fade>
       </div>

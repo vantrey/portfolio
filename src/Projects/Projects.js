@@ -3,7 +3,9 @@ import styles from './Projects.module.css'
 import Project from "./Project/Project";
 import Title from "../Tilte/Title"
 import incubatorImg from "../assets/images/it-incubator-img.jpg"
-import counterImg from "../assets/images/counter-img.png"
+import wisemenImg from "../assets/images/wisemen.png"
+import socialImg from "../assets/images/social_media.jpg"
+import todoImg from "../assets/images/to-do-list.png"
 import Fade from 'react-reveal/Fade';
 
 const Projects = () => {
@@ -13,24 +15,24 @@ const Projects = () => {
       descriptionText: 'Lorem ipsum dolor sit amet, ' +
         'consectetur adipisicing elit. Dicta quidem, veritatis.' +
         'consectetur adipisicing elit. ',
-      projectPicture: 'https://makeawebsitehub.com/wp-content/uploads/2016/04/social_media.jpg',
-      projectUrl: ''
+      projectPicture: socialImg,
+      projectUrl: 'https://github.com/vantrey/socialNetwork'
     },
     {
       projectTitle: 'Todo list',
       descriptionText: 'Lorem ipsum dolor sit amet, ' +
         'consectetur adipisicing elit. Dicta quidem, veritatis.' +
         'consectetur adipisicing elit. ',
-      projectPicture: 'https://pluspng.com/img-png/to-do-list-png-the-power-of-a-to-do-list-imodelafrica-1024.png',
-      projectUrl: 'https://vantrey.github.io/ignat-tasks/#/Tuesday'
+      projectPicture: todoImg,
+      projectUrl: 'https://github.com/vantrey/todoListWithApi'
 
     },
     {
-      projectTitle: 'Counter',
+      projectTitle: 'Wisemen game',
       descriptionText: 'Lorem ipsum dolor sit amet, ' +
         'consectetur adipisicing elit. Dicta quidem, veritatis.' +
         'consectetur adipisicing elit.',
-      projectPicture: counterImg,
+      projectPicture: wisemenImg,
       projectUrl: ''
 
     },
@@ -40,12 +42,12 @@ const Projects = () => {
         'consectetur adipisicing elit. Dicta quidem, veritatis.' +
         'consectetur adipisicing elit.',
       projectPicture: incubatorImg,
-      projectUrl: 'https://vantrey.github.io/ignat-tasks'
+      projectUrl: 'https://github.com/vantrey/homeWorkTasks'
 
     },
   ]
-  const projectsEls = projects.map((project, i) => (
-    <Project key={i}
+  const projectsEls = projects.map(project => (
+    <Project key={project.projectTitle}
              descriptionText={project.descriptionText}
              projectTitle={project.projectTitle}
              projectUrl={project.projectUrl}
