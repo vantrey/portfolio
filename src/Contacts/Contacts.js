@@ -7,6 +7,7 @@ import {useForm} from "react-hook-form";
 import * as yup from "yup"
 import TextField from "../TextField/TextField"
 import axios from "axios"
+import Preloader from "../Preloader/Preloader"
 
 const Contacts = () => {
   const sendMessageSchema = yup.object().shape({
@@ -54,13 +55,12 @@ const Contacts = () => {
             <TextField type={`textarea`} name={`message`} register={register} errorMessage={errors.message}/>
             <div className={styles.contactsButton}>
 
-              {(isFetching && <div>...sending</div>) ||
+              {(isFetching && <Preloader/>) ||
 
               <Button buttonName={`send message`} buttonLink={``}/>}
             </div>
 
           </form>
-
         </Fade>
       </div>
     </div>
