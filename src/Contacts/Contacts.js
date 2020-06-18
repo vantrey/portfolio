@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import styles from './Contacts.module.css'
 import Button from "../Button/Button"
 import Title from "../Tilte/Title"
@@ -18,11 +18,18 @@ const Contacts = () => {
   });
   const [isFetching, setIsFetching] = useState(false)
   const {register, handleSubmit, errors, reset} = useForm({mode: 'onBlur', validationSchema: sendMessageSchema});
+  const [isSuccess, setIsSuccess] = useState(false)
+
+  useEffect(() => {
+    if (isSuccess) {
+      setTimeout(() => {
+        setIsSuccess(false)
+      }, 2000)
+    }
+  }, [isSuccess])
 
   const onSubmit = async data => {
-
     reset()
-
     try {
       setIsFetching(true)
       await axios.post(
@@ -30,7 +37,7 @@ const Contacts = () => {
           data
         })
       setIsFetching(false)
-
+      setIsSuccess(true)
     } catch (e) {
       console.log({...e})
       setIsFetching(false)
@@ -53,9 +60,16 @@ const Contacts = () => {
             <TextField type={`input`} name={`name`} register={register} errorMessage={errors.name}/>
             <TextField type={`input`} name={'email'} register={register} errorMessage={errors.email}/>
             <TextField type={`textarea`} name={`message`} register={register} errorMessage={errors.message}/>
+
             <div className={styles.contactsButton}>
 
-              {(isFetching && <Preloader/>) ||
+              {(isFetching &&
+                <Preloader/>) ||
+
+              (isSuccess &&
+                <Fade top>
+                <div className={styles.success}>SUCCESS</div>
+              </Fade>) ||
 
               <Button buttonName={`send message`} buttonLink={``}/>}
             </div>

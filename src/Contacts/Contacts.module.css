@@ -48,7 +48,13 @@
   border: 1px solid transparent;
 }
 
+.success {
+  margin-top: 20px;
+  color: #4e93e6;
+}
+
 .contactsButton {
+  height: 50px;
   margin-top: 10px;
 }
 
