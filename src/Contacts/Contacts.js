@@ -6,6 +6,7 @@ import Fade from 'react-reveal/Fade';
 import {useForm} from "react-hook-form";
 import * as yup from "yup"
 import TextField from "../TextField/TextField"
+import axios from "axios"
 
 const Contacts = () => {
   const sendMessageSchema = yup.object().shape({
@@ -18,6 +19,11 @@ const Contacts = () => {
   const {register, handleSubmit, errors} = useForm({mode: 'onBlur', validationSchema: sendMessageSchema});
   const onSubmit = data => {
     console.log(data)
+    axios.post('https://nodejs-smtp-server.herokuapp.com/sendMessage', {
+      data
+    }).then(()=>{
+      alert('your message has benn sent')
+    })
   }
   return (
     <div id={'contacts'} className={styles.contacts}>

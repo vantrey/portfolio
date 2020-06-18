@@ -2,8 +2,9 @@ import React from "react";
 import styles from './Skills.module.css'
 import Skill from "./Skill/Skill";
 import {faHtml5, faJs, faReact} from '@fortawesome/free-brands-svg-icons'
-import Title from "../Tilte/Title"
+import typescriptIcon from '@iconify/icons-simple-icons/typescript';
 import reduxIcon from '@iconify/icons-simple-icons/redux';
+import Title from "../Tilte/Title"
 import Fade from 'react-reveal/Fade';
 
 const Skills = () => {
@@ -14,15 +15,15 @@ const Skills = () => {
         'consectetur adipisicing elit. Dicta quidem, veritatis.' +
         'consectetur adipisicing elit. ',
       icon: faHtml5,
-      isReduxIcon: false
+      isIconfy: false
     },
     {
-      title: 'Java Script',
+      title: 'JavaScript',
       descriptionText: 'Lorem ipsum dolor sit amet, ' +
         'consectetur adipisicing elit. Dicta quidem, veritatis.' +
         'consectetur adipisicing elit. ',
       icon: faJs,
-      isReduxIcon: false
+      isIconfy: false
     },
     {
       title: 'React',
@@ -30,7 +31,7 @@ const Skills = () => {
         'consectetur adipisicing elit. Dicta quidem, veritatis.' +
         'consectetur adipisicing elit.',
       icon: faReact,
-      isReduxIcon: false
+      isIconfy: false
     },
     {
       title: 'Redux',
@@ -38,13 +39,21 @@ const Skills = () => {
         'consectetur adipisicing elit. Dicta quidem, veritatis.' +
         'consectetur adipisicing elit.',
       icon: reduxIcon,
-      isReduxIcon: true
+      isIconfy: true
+    },
+    {
+      title: 'TypeScript',
+      descriptionText: 'Lorem ipsum dolor sit amet, ' +
+        'consectetur adipisicing elit. Dicta quidem, veritatis.' +
+        'consectetur adipisicing elit.',
+      icon: typescriptIcon,
+      isIconfy: true
     },
   ]
-  const skillsEls = skills.map((skill, i) => (
-    <Skill key={i}
+  const skillsEls = skills.map(skill  => (
+    <Skill key={skill.title}
            descriptionText={skill.descriptionText}
-           isReduxIcon={skill.isReduxIcon}
+           isIconfy={skill.isIconfy}
            icon={skill.icon}
            skillTitle={skill.title}
     />

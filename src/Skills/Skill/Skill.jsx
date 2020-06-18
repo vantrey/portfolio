@@ -8,10 +8,10 @@ const Skill = (props) => {
     <div className={styles.skillWrapper}>
       <div className={styles.skillIconBg}>
         <div className={styles.skillIcon}>
-          {
-            (props.isReduxIcon && <Icon icon={props.icon} />) ||
-              (!props.isReduxIcon && <FontAwesomeIcon icon={props.icon}/>)
-          }
+
+          {props.isIconfy && <Icon icon={props.icon}/>}
+          {!props.isIconfy && <FontAwesomeIcon icon={props.icon}/>}
+
         </div>
       </div>
       <h3>{props.skillTitle}</h3>
