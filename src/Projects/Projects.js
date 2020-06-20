@@ -33,7 +33,7 @@ const Projects = () => {
         'consectetur adipisicing elit. Dicta quidem, veritatis.' +
         'consectetur adipisicing elit.',
       projectPicture: wisemenImg,
-      projectUrl: ''
+      projectUrl: 'https://github.com/vantrey/wisemen'
 
     },
     {
