@@ -11,41 +11,34 @@ const Skills = () => {
   const skills = [
     {
       title: 'HTML&CSS',
-      descriptionText: 'Lorem ipsum dolor sit amet, ' +
-        'consectetur adipisicing elit. Dicta quidem, veritatis.' +
-        'consectetur adipisicing elit. ',
+      descriptionText: `flexbox, css grid, media queries`,
       icon: faHtml5,
       isIconfy: false
     },
     {
       title: 'JavaScript',
-      descriptionText: 'Lorem ipsum dolor sit amet, ' +
-        'consectetur adipisicing elit. Dicta quidem, veritatis.' +
-        'consectetur adipisicing elit. ',
+      descriptionText: `es5 / es6, arrow functions, array methods, spread, rest, closures,
+                        destructuring, promises, pure function, this, prototypes, 
+                        deep copy objects, local storage`,
       icon: faJs,
       isIconfy: false
     },
     {
       title: 'React',
-      descriptionText: 'Lorem ipsum dolor sit amet, ' +
-        'consectetur adipisicing elit. Dicta quidem, veritatis.' +
-        'consectetur adipisicing elit.',
+      descriptionText: `class and function components,
+                        life cycle methods, HOCs, HOOKs, local state, AJAX, ref`,
       icon: faReact,
       isIconfy: false
     },
     {
       title: 'Redux',
-      descriptionText: 'Lorem ipsum dolor sit amet, ' +
-        'consectetur adipisicing elit. Dicta quidem, veritatis.' +
-        'consectetur adipisicing elit.',
+      descriptionText: `store methods, reducer, combineReducers, applyMiddleware, redux-thunk`,
       icon: reduxIcon,
       isIconfy: true
     },
     {
       title: 'TypeScript',
-      descriptionText: 'Lorem ipsum dolor sit amet, ' +
-        'consectetur adipisicing elit. Dicta quidem, veritatis.' +
-        'consectetur adipisicing elit.',
+      descriptionText: `typing JS objects and functions, react components, redux methods etc.  `,
       icon: typescriptIcon,
       isIconfy: true
     },
