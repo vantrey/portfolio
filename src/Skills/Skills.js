@@ -38,7 +38,7 @@ const Skills = () => {
     },
     {
       title: 'TypeScript',
-      descriptionText: `typing JS objects and functions, react components, redux methods etc.  `,
+      descriptionText: `typing JS objects and functions, react components, redux methods, etc.  `,
       icon: typescriptIcon,
       isIconfy: true
     },

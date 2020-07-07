@@ -8,7 +8,7 @@ const Slogan = () => {
   return (
     <div className={styles.slogan}>
       <div className={styles.container}>
-        <Title isSmall={false}>I Am Available For Freelancer</Title>
+        <Title isSmall={false}>I am available for full time work</Title>
         <Fade top>
           <Button
             buttonName={`here me`}
