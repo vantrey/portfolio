@@ -11,36 +11,38 @@ import Fade from 'react-reveal/Fade';
 const Projects = () => {
   const projects = [
     {
-      projectTitle: 'Social network',
-      descriptionText: 'Lorem ipsum dolor sit amet, ' +
-        'consectetur adipisicing elit. Dicta quidem, veritatis.' +
-        'consectetur adipisicing elit. ',
-      projectPicture: socialImg,
-      projectUrl: 'https://github.com/vantrey/socialNetwork'
+      projectTitle: 'Wisemen game',
+      descriptionText: `A card-based learning game. 
+                        Project with collaborators. 
+                        Use React, Redux, hooks, Typescript, REST API,
+                        and other technologies. In process...`,
+      projectPicture: wisemenImg,
+      projectUrl: 'https://github.com/vantrey/wisemen'
     },
     {
       projectTitle: 'Todo list',
-      descriptionText: 'Lorem ipsum dolor sit amet, ' +
-        'consectetur adipisicing elit. Dicta quidem, veritatis.' +
-        'consectetur adipisicing elit. ',
+      descriptionText: `Created using React, Redux, and TypeScript. 
+                        There is interaction with the server. 
+                        Based on class components with the use of the lifecycle methods.`,
       projectPicture: todoImg,
       projectUrl: 'https://github.com/vantrey/todoListWithApi'
 
     },
     {
-      projectTitle: 'Wisemen game',
-      descriptionText: 'Lorem ipsum dolor sit amet, ' +
-        'consectetur adipisicing elit. Dicta quidem, veritatis.' +
-        'consectetur adipisicing elit.',
-      projectPicture: wisemenImg,
-      projectUrl: 'https://github.com/vantrey/wisemen'
-
+      projectTitle: 'Social network',
+      descriptionText: `A large educational project of the social network on React. 
+                        The project uses both functional and class components. 
+                        State management is performed via Redux. 
+                        Interaction with the server using the axios library. 
+                        The application architecture is divided into three blocks: 
+                        UI, BLL, and DAL`,
+      projectPicture: socialImg,
+      projectUrl: 'https://github.com/vantrey/socialNetwork'
     },
     {
       projectTitle: 'IT Incubator tasks',
-      descriptionText: 'Lorem ipsum dolor sit amet, ' +
-        'consectetur adipisicing elit. Dicta quidem, veritatis.' +
-        'consectetur adipisicing elit.',
+      descriptionText: `Training tasks collected in a single project. 
+      React, Redux, TypeScript, REST API are used`,
       projectPicture: incubatorImg,
       projectUrl: 'https://github.com/vantrey/homeWorkTasks'
 

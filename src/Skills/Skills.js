@@ -26,7 +26,7 @@ const Skills = () => {
     {
       title: 'React',
       descriptionText: `class and function components,
-                        life cycle methods, HOCs, HOOKs, local state, AJAX, ref`,
+                        life cycle methods, HOCs, hooks, local state, AJAX, ref, Flux`,
       icon: faReact,
       isIconfy: false
     },

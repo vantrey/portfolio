@@ -57,9 +57,9 @@ const Contacts = () => {
 
           <form onSubmit={handleSubmit(onSubmit)} className={styles.contactsForm}>
 
-            <TextField type={`input`} name={`name`} register={register} errorMessage={errors.name}/>
-            <TextField type={`input`} name={'email'} register={register} errorMessage={errors.email}/>
-            <TextField type={`textarea`} name={`message`} register={register} errorMessage={errors.message}/>
+            <TextField fieldType={`input`} name={`name`} register={register} errorMessage={errors.name}/>
+            <TextField fieldType={`input`} name={'email'} register={register} errorMessage={errors.email}/>
+            <TextField fieldType={`textarea`} name={`message`} register={register} errorMessage={errors.message}/>
 
             <div className={styles.contactsButton}>
 
