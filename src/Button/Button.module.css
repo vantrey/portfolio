@@ -17,6 +17,7 @@
   border: none;
   color: white;
   cursor: pointer;
+  outline: none;
 }
 
 .buttonName {
