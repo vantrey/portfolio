@@ -24,9 +24,9 @@
   transition: 0.3s;
 }
 
-.projectPicture:hover {
+/*.projectPicture:hover {
   filter: blur(3px)
-}
+}*/
 
 .projectPicture:after {
   position: absolute;
