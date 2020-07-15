@@ -12,7 +12,7 @@ const Project = (props) => {
         </div>
         <div className={styles.button}>
           <Button
-            buttonName={`view`}
+            buttonName={`view more`}
             buttonLink={props.projectUrl}
           />
         </div>
