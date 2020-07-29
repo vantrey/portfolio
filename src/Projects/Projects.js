@@ -12,25 +12,18 @@ const Projects = () => {
   const projects = [
     {
       projectTitle: 'Wisemen game',
-      descriptionText: `A card-based learning game. 
-                        Project with collaborators. 
-                        Use React, Redux, hooks, Typescript, REST API,
+      descriptionText: `A card-based learning game on React.
+                        There are several training modes.
+                        You can create your own decks or play with other users public decks.
+                        Project with the collaborators. 
+                        Use React, Redux, hooks, Typescript, axios,
                         and other technologies. In process...`,
       projectPicture: wisemenImg,
-      projectUrl: 'https://github.com/vantrey/wisemen'
-    },
-    {
-      projectTitle: 'Todo list',
-      descriptionText: `Created using React, Redux, and TypeScript. 
-                        There is interaction with the server. 
-                        Based on class components with the use of the lifecycle methods.`,
-      projectPicture: todoImg,
-      projectUrl: 'https://github.com/vantrey/todoListWithApi'
-
+      projectUrl: 'https://vantrey.github.io/wisemen'
     },
     {
       projectTitle: 'Social network',
-      descriptionText: `A large educational project of the social network on React. 
+      descriptionText: `The social network on React. 
                         The project uses both functional and class components. 
                         State management is performed via Redux. 
                         Interaction with the server using the axios library. 
@@ -40,12 +33,11 @@ const Projects = () => {
       projectUrl: 'https://github.com/vantrey/socialNetwork'
     },
     {
-      projectTitle: 'IT Incubator tasks',
-      descriptionText: `Training tasks collected in a single project. 
-      React, Redux, TypeScript, REST API are used`,
-      projectPicture: incubatorImg,
-      projectUrl: 'https://github.com/vantrey/homeWorkTasks'
-
+      projectTitle: 'Todo list',
+      descriptionText: `Created using React, Redux, and TypeScript. 
+                        Based on class components with the use of the lifecycle methods.`,
+      projectPicture: todoImg,
+      projectUrl: 'https://vantrey.github.io/someProjects/#/TodoList'
     },
   ]
   const projectsEls = projects.map(project => (

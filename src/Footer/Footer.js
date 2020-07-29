@@ -2,7 +2,7 @@ import React from "react";
 import styles from './Footer.module.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {
-  faFacebookF,
+  faGithub,
   faLinkedinIn,
   faTelegramPlane,
   faVk
@@ -17,8 +17,8 @@ const Footer = () => {
         <Title isSmall={true}>Ivan Tolkachev</Title>
         <Fade top>
           <nav className={styles.socialBlock}>
-            <a href={`https://www.facebook.com/profile.php?id=100018834223000`}>
-              <FontAwesomeIcon className={styles.socialIcon} icon={faFacebookF}/>
+            <a href={`https://github.com/vantrey`}>
+              <FontAwesomeIcon className={styles.socialIcon} icon={faGithub}/>
             </a>
             <a href={`https://vk.com/id29951956`}>
               <FontAwesomeIcon className={styles.socialIcon} icon={faVk}/>
